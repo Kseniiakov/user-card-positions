@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User card positions</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <main>
-    <article class="user-card">
-      <section class="avatar-wrapper">
-        <img class="avatar" src="./imgs/img1.jpg" alt="avatar">
-      </section>
-      <section>
-        <h2>Jordan Tucker</h2>
-      </section>
-    </article>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User card positions</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="user-card">
+        <section class="wrapper">
+          <section class="inl-bk avatar-wrapper">
+            <img class="avatar" src="./imgs/img1.jpg" alt="avatar" />
+          </section>
+
+          <section class="inl-bk content">
+            <section class="name">
+              <h2>Jordan Tucker</h2>
+              <a
+                class="inl-bk name-link"
+                target="_blank"
+                href="https://www.instagram.com/"
+                >@jordantucker</a
+              >
+            </section>
+            <section class="info">
+              <section class="inl-bk info-wrapper">
+                <p>shots</p>
+                <div>250</div>
+              </section>
+              <section class="inl-bk info-wrapper">
+                <p>follovers</p>
+                <div>1689</div>
+              </section>
+            </section>
+          </section>
+        </section>
+        <a class="inl-bk plus" href="#">
+          <svg
+            class="plus-icon"
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          >
+            <path d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z" />
+          </svg>
+        </a>
+      </article>
+    </main>
+  </body>
 </html>
