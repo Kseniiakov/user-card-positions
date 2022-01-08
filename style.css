@@ -5,3 +5,38 @@
 .inl-bk {
   display: inline-block;
 }
+
+body {
+  margin: 0;
+
+  background-color: #DEDFE1;
+  border: 1px solid transparent;
+
+  height: 100vh;
+}
+
+.user-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  
+  overflow: hidden;
+
+  margin: auto;
+  margin-top: 100px;
+
+  height: 350px;
+  width: 800px;
+}
+
+.avatar-wrapper {
+  width: 40%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.avatar {
+  /* object-fit: cover; */
+  object-position: -249px -10px;
+  width: 200%;
+}
