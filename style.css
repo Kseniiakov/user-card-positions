@@ -2,47 +2,43 @@
   box-sizing: border-box;
 }
 
-.inl-bk {
-  display: inline-block;
-}
-
 body {
-  margin: 0;
-
   background-color: #DEDFE1;
-  border: 1px solid transparent;
-
-  height: 100vh;
+  
   font-family: sans-serif;
 }
 
-.user-card {
-  margin: auto;
-  margin-top: 100px;
+main{
+  border: 1px solid transparent;
+}
 
+.wrapper  {
+  width: 700px;
+  height: 300px;
+
+  margin: 18% auto 0 auto;
+}
+
+.user-card {
   height: 300px;
   width: 700px;
+
+  color: #A9A9AA;
+
+  top: 0;
+
+  z-index: 3;
 }
 
-.user-card,
-.info {
-  font-size: 0;
-}
-
-.wrapper {
+.user-card-wrapper {
   background-color: #FFFFFF;
   border-radius: 8px;
-
-  overflow: hidden;
-
-  height: 100%;
+  -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.2); 
+  box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.2);
 }
 
 .avatar-wrapper {
   width: 40%;
-  height: 100%;
-
-  overflow: hidden;
 }
 
 .avatar {
@@ -55,7 +51,6 @@ body {
 .avatar-wrapper,
 .info-wrapper {
   font-size: 18px;
-  color: #A9A9AA;
 }
 
 .content {
@@ -63,16 +58,9 @@ body {
   vertical-align: top;
 
   width: 60%;
-  height: 100%;
-}
-
-.name,
-.user-card {
-  position: relative;
 }
 
 .name > h2 {
-  margin: 0;
   color: black;
 }
 
@@ -80,16 +68,28 @@ body {
   text-decoration: none;
   color: inherit;
 
-  margin-top: 5px;
+  margin-top: 7px;
+}
+
+.info {
+  margin-top: 50px;
+}
+
+.info-wrapper + .info-wrapper {
+  margin-left: 45px;
+}
+
+.info-quantity {
+  font-size: 25px;
+
+  margin-top: 10px;
 }
 
 /* PRO */
 
 .name::after {
-  display: inline-block;
   content: "PRO";
-
-  position: absolute;
+  
   top: -38px;
   right: 0px;
 
@@ -102,6 +102,8 @@ body {
 
   padding: 0.3em 0.5em;
 }
+
+/* circle button plus */
 
 .plus {
   background-color: #FFDE49;
@@ -120,4 +122,79 @@ body {
 
 .plus-icon {
   margin: 23px 0;
+}
+
+.user-card-second {
+  width: 660px;
+  
+  top: -20px;
+  left: 20px;
+
+  z-index: 2;
+}
+
+.user-card-three {
+  width: 620px;
+  
+  top: -40px;
+  left: 40px;
+
+  z-index: 1;
+}
+
+/* font size 0 */
+
+.user-card,
+.info {
+  font-size: 0;
+}
+
+/* margin 0 */
+
+body,
+.name > h2,
+.info-header {
+  margin: 0;
+}
+
+/* height 100% */
+
+.user-card-wrapper,
+.avatar-wrapper,
+.content {
+  height: 100%;
+}
+
+/* overflow: hidden */
+
+.user-card-wrapper,
+.avatar-wrapper {
+  overflow: hidden;
+}
+
+/* realtive */
+
+.wrapper,
+.name {
+  position: relative;
+}
+
+/* absolute */
+
+.user-card,
+.user-card-second,
+.user-card-three,
+.name::after {
+  position: absolute;
+}
+
+/* inline-block */
+
+.content,
+.avatar-wrapper,
+.name::after,
+.info-wrapper,
+.name-link,
+.plus {
+  display: inline-block;
 }
